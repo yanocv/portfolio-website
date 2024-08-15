@@ -10,21 +10,6 @@ This repository contains the source code for my personal portfolio website, buil
 - **TypeScript**: Type-safe codebase for better development experience and fewer bugs.
 - **SEO Optimized**: Optimized for search engines with Next.js' built-in SEO features.
 
-## Installation
-
-### Clone the repository
-
-```bash
-git clone https://github.com/your-username/portfolio-website.git
-cd portfolio-website
-```
-
-### Install dependencies
-
-```
-npm install
-```
-
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more information.
 
