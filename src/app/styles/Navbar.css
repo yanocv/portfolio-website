@@ -1,0 +1,16 @@
+/* styles/Navbar.css */
+.header-default {
+  background: rgba(255, 255, 255, 0);
+  padding: 30px 0;
+  box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);
+  transition:
+    background 0.3s,
+    padding 0.3s,
+    box-shadow 0.3s;
+}
+
+.header-scrolled {
+  background: rgba(255, 255, 255, 1);
+  padding: 10px 0;
+  box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);
+}
