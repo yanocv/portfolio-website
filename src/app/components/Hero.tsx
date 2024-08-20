@@ -4,12 +4,12 @@ import "../styles/Hero.css";
 const Hero: React.FC = (): JSX.Element => {
   return (
     <div id="hero" className="hero bg-gray-200 ">
-      <div className="container">
-        <div className="row">
+      <div className="container mx-auto sm:px-4">
+        <div className="flex flex-wrap ">
           <div className="col-md-6">
-            <h1>Alex Vidal</h1>
+            <h1 className="text-danger">Yano Hayato</h1>
             <div className="page-scroll">
-              <p className="job-title">Full Stack Developer</p>
+              <p className="job-title">Frontend Developer</p>
               <a href="#contact" className="btn btn-fill ">
                 Hire me
               </a>

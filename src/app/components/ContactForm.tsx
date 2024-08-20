@@ -1,6 +1,6 @@
 import FormInput from "./FormInput";
 
-export default function ContactForm() {
+const ContactForm: React.FC = (): JSX.Element => {
   return (
     <form>
       <div className="row">
@@ -25,4 +25,6 @@ export default function ContactForm() {
       </button>
     </form>
   );
-}
+};
+
+export default ContactForm;

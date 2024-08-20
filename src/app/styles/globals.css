@@ -1,6 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+@media only screen and (max-width: 767px) {
+  h4 {
+    font-size: 20px;
+  }
+
+  /* Buttons */
+  .btn {
+    min-width: 100px;
+    line-height: 30px;
+    padding: 0 20px;
+  }
+
+  /* Input fields */
+  .form-control {
+    margin-top: 25px;
+  }
+
+  /* Margin and Paddings Resets */
+  .mt-x-0 {
+    margin-top: 0;
+  }
+}
 
 /* FONT
 ================================================== */

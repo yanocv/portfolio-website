@@ -1,11 +1,18 @@
+import Image from "next/image";
 import PortfolioItem from "./PortfolioItem";
 
-export default function PortfolioSection() {
+export default function PortfolioSection(): JSX.Element {
   return (
     <section id="portfolio" className="site-section section-portfolio">
       <div className="container text-center">
         <h3>My Recent Works</h3>
-        <img src="assets/img/lines.svg" className="img-lines" alt="lines" />
+        <Image
+          src="assets/img/lines.svg"
+          className="img-lines"
+          alt="lines"
+          width={100}
+          height={50}
+        />
         <div className="row">
           <div className="col-md-4 col-xs-6">
             <PortfolioItem
