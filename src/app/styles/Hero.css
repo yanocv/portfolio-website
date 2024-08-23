@@ -47,3 +47,57 @@
 .hero img {
   height: 600px;
 }
+
+@media only screen and (max-width: 1199px) {
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero img {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .job-title {
+    font-size: 20px;
+  }
+
+  .hero img {
+    height: 420px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero .col-md-6:first-child {
+    top: 30%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .job-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .hero img {
+    height: 360px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .visible-xxs {
+    display: block;
+  }
+
+  .hero .visible-xxs + .btn {
+    margin-top: 10px;
+  }
+}
