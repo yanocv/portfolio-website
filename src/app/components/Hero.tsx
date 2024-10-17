@@ -24,7 +24,6 @@ const Hero: React.FC = (): JSX.Element => {
             <Image
               src="/assets/img/alex-vidal.png"
               alt="alex-vidal"
-              layout="responsive"
               width={500}
               height={600}
             />
