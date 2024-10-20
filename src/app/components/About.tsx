@@ -30,7 +30,7 @@ const About: React.FC = (): JSX.Element => {
   };
 
   return (
-    <section className="site-section section-about text-center">
+    <section className="section-about text-center">
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-md-offset-3">

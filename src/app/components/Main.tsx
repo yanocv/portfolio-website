@@ -1,3 +1,5 @@
+import "../styles/Main.css";
+
 export interface SectionProps {
   id: string;
   children: React.ReactNode;
@@ -11,9 +13,9 @@ const Main: React.FC<MainProps> = ({ sections }: MainProps): JSX.Element => {
   return (
     <main id="main" className="site-main">
       {sections.map((section) => (
-        <section key={section.id} className="site-section">
+        <div key={section.id} className="site-section">
           {section.children}
-        </section>
+        </div>
       ))}
     </main>
   );

@@ -26,6 +26,7 @@ const Hero: React.FC = (): JSX.Element => {
               alt="alex-vidal"
               width={500}
               height={600}
+              layout="responsive"
             />
           </div>
         </div>

@@ -37,7 +37,7 @@ module.exports = {
   rules: {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "prettier/prettier": "error",
+    "prettier/prettier": ["error", { endOfLine: "auto" }],
     "@typescript-eslint/explicit-module-boundary-types": [
       "error",
       {
@@ -63,6 +63,7 @@ module.exports = {
     ],
     "@typescript-eslint/no-explicit-any": "off",
     "class-methods-use-this": "off",
+    "comma-dangle": ["error", "true"],
   },
   ignorePatterns: ["**/node_modules/**", "dist"],
 };

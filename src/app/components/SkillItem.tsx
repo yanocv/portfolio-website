@@ -1,3 +1,5 @@
+import "../styles/SkillItem.css";
+
 interface SkillItemProps {
   name: string;
   progress: number;
@@ -9,7 +11,7 @@ const SkillItem: React.FC<SkillItemProps> = ({
 }): JSX.Element => {
   return (
     <div className="skill">
-      <h4>{name}</h4>
+      <h4 className="text-left">{name}</h4>
       <div className="progress">
         <div
           className="progress-bar"
