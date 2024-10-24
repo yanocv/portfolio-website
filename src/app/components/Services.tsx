@@ -1,5 +1,6 @@
 import ServiceItem from "./ServiceItem";
 import "../styles/Services.css";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -8,13 +9,19 @@ export default function Services() {
         <div className="row">
           <div className="col-md-12">
             <h3>What I do</h3>
-            <img src="assets/img/lines.svg" className="img-lines" alt="lines" />
+            <Image
+              src="assets/img/lines.svg"
+              className="img-lines"
+              alt="lines"
+              width={60}
+              height={6}
+            />
           </div>
           <div className="col-sm-4">
             <ServiceItem
               imgSrc="assets/img/front-end.svg"
               title="Front-end"
-              description="I specialize in creating responsive, interactive, and visually appealing user interfaces using React and Next.js. My experience includes working with HTML5, CSS3, and JavaScript, focusing on building seamless and intuitive web experiences that work across all devices."
+              description="I specialize in creating responsive, interactive, and visually appealing user interfaces using React. My experience includes working with HTML5, CSS3, JavaScript, and TypeScript focusing on building seamless and intuitive web experiences that work across all devices."
             />
           </div>
           <div className="col-sm-4">

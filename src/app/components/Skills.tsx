@@ -1,12 +1,19 @@
 import "../styles/Skills.css";
 import SkillItem from "./SkillItem";
+import Image from "next/image";
 
 const Skills: React.FC = (): JSX.Element => {
   return (
     <section className="section-skills">
       <div className="container text-center">
         <h3>My Skills</h3>
-        <img src="assets/img/lines.svg" className="img-lines" alt="lines" />
+        <Image
+          src="assets/img/lines.svg"
+          className="img-lines"
+          alt="lines"
+          width={60}
+          height={6}
+        />
         <div className="row">
           <div className="col-md-4">
             <SkillItem name="HTML" progress={90} />
