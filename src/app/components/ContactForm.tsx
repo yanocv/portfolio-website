@@ -1,4 +1,5 @@
 import FormInput from "./FormInput";
+import "../styles/Contact.css";
 
 const ContactForm: React.FC = (): JSX.Element => {
   return (

@@ -1,9 +1,17 @@
-export default function CounterItem({ count, text }) {
+"use client";
+
+interface CounterItemProps {
+  count: number;
+  text: string | JSX.Element;
+}
+
+export default function CounterItem({
+  count,
+  text,
+}: CounterItemProps): JSX.Element {
   return (
     <>
-      <p className="counter start" data-to={count} data-speed="2000">
-        0
-      </p>
+      <p className="counter start">{count}</p>
       <h4>{text}</h4>
     </>
   );

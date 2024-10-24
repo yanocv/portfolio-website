@@ -1,4 +1,7 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
+import Counter from "./components/Counter";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Main, { SectionProps } from "./components/Main";
 import Portfolio from "./components/Portfolio";
@@ -23,12 +26,21 @@ export default function Home(): JSX.Element {
       id: "portfolio",
       children: <Portfolio />,
     },
+    {
+      id: "counter",
+      children: <Counter />,
+    },
+    {
+      id: "contact",
+      children: <Contact />,
+    },
   ];
 
   return (
     <>
       <Hero />
       <Main sections={sections} />
+      <Footer />
     </>
   );
 }

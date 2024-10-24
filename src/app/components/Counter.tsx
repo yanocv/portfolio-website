@@ -1,20 +1,40 @@
-import CounterItem from "./CounterItem";
+"use client";
 
-export default function CountersSection() {
+import CounterItem from "./CounterItem";
+import "../styles/Counter.css";
+import { useEffect, useState } from "react";
+
+export default function Counter() {
+  const [secondsOnSite, setSecondsOnSite] = useState(0);
+  const [displayedCount, setDisplayedCount] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setSecondsOnSite((prev) => prev + 1);
+      setDisplayedCount((prev) => Math.min(prev + 1, secondsOnSite));
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [secondsOnSite]);
   return (
-    <section className="site-section section-counters text-center">
+    <section className="section-counters text-center">
       <div className="container">
         <div className="row">
           <div className="col-sm-4 col-xs-12">
-            <CounterItem count={10} text="Years Experience" />
+            <CounterItem count={3} text="Years Experience" />
           </div>
           <div className="col-sm-4 col-xs-12">
-            <CounterItem count={120} text="Projects Delivered" />
+            <CounterItem count={9} text="Projects Delivered" />
           </div>
           <div className="col-sm-4 col-xs-12">
             <CounterItem
-              count={1}
-              text="Seconds on this site! What are you waiting for?"
+              count={displayedCount}
+              text={
+                <>
+                  Seconds on this site!
+                  <br />
+                  What are you waiting for?
+                </>
+              }
             />
           </div>
         </div>

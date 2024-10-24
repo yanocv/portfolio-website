@@ -1,17 +1,18 @@
 import Image from "next/image";
 import ContactForm from "./ContactForm";
+import "../styles/Contact.css";
 
-const ContactSection: React.FC = (): JSX.Element => {
+const Contact: React.FC = (): JSX.Element => {
   return (
-    <section id="contact" className="site-section section-form text-center">
+    <section id="contact" className="section-form text-center">
       <div className="container">
         <h3>Contact</h3>
         <Image
           src="assets/img/lines.svg"
           className="img-lines"
           alt="lines"
-          width={100}
-          height={50}
+          width={60}
+          height={6}
         />
         <ContactForm />
       </div>
@@ -19,4 +20,4 @@ const ContactSection: React.FC = (): JSX.Element => {
   );
 };
 
-export default ContactSection;
+export default Contact;

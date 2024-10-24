@@ -1,7 +1,3 @@
-.section-portfolio {
-  padding-bottom: 120px;
-}
-
 .section-portfolio .col-md-4:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
@@ -11,10 +7,6 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .section-portfolio {
-    padding-bottom: 90px;
-  }
-
   .section-portfolio .col-md-4:nth-last-child(-n + 3) {
     margin-bottom: 30px;
   }
@@ -25,10 +17,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .section-portfolio {
-    padding-bottom: 60px;
-  }
-
   .section-portfolio .col-xs-6 {
     width: 100%;
     padding: 0;
