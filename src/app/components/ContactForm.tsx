@@ -21,7 +21,7 @@ const ContactForm: React.FC = (): JSX.Element => {
           ></textarea>
         </div>
       </div>
-      <button href="#" className="btn btn-border" type="submit">
+      <button className="btn btn-border" type="submit">
         Hire Me <span className="glyphicon glyphicon-send"></span>
       </button>
     </form>
