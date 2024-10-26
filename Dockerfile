@@ -1,32 +1,20 @@
 # Base image
-FROM node:20 AS base
+FROM node:20
 
 # Set working directory
 WORKDIR /app
 
-# Install dependencies
+# Copy package.json and package-lock.json
 COPY package*.json ./
+
+# Install dependencies
 RUN npm install
 
 # Copy the rest of the application code
 COPY . .
 
-# Build the application
-RUN npm run build
-
-# Production stage
-FROM node:20 AS production
-
-# Set working directory
-WORKDIR /app
-
-# Copy the built application and dependencies from the base stage
-COPY --from=base /app/node_modules /app/node_modules
-COPY --from=base /app/.next /app/.next
-COPY --from=base /app/public /app/public
-
-# Expose the port
+# Expose port (optional, for development server)
 EXPOSE 3000
 
-# Start the application
-CMD ["npm", "start"]
+# Start the application (development mode)
+CMD ["npm", "run", "dev"]

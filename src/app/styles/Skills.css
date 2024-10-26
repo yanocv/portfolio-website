@@ -1,0 +1,5 @@
+@media only screen and (max-width: 991px) {
+  .section-skills .col-md-4 + .col-md-4 {
+    margin-top: 20px;
+  }
+}

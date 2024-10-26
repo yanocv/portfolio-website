@@ -1,0 +1,10 @@
+.site-section h2,
+.site-section h3 {
+  font-size: 36px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.site-section p {
+  margin-bottom: 35px;
+}

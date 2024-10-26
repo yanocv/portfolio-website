@@ -1,0 +1,38 @@
+.progress {
+  height: 15px;
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #dfdfdf;
+  box-shadow: none;
+}
+
+.progress-bar {
+  background-color: #212121;
+}
+
+.skill + .skill {
+  margin-top: 50px;
+}
+
+.skill h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+
+@media only screen and (max-width: 991px) {
+  .skill + .skill {
+    margin-top: 20px;
+  }
+
+  .skill h4 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .skill h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}
