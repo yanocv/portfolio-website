@@ -9,7 +9,7 @@ const Hero: React.FC = (): JSX.Element => {
           <div className="col-md-6">
             <h1>Yano Hayato</h1>
             <div className="page-scroll">
-              <p className="job-title">Frontend Developer</p>
+              <p className="job-title">Frontwsdxwwxend Developer</p>
               <a href="#contact" className="btn btn-fill ">
                 Hire me
               </a>
