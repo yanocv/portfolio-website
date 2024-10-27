@@ -20,7 +20,7 @@ export default function Portfolio(): JSX.Element {
         <div className="row">
           <div className="col-md-4 col-xs-6">
             <PortfolioItem
-              imgSrc="assets/img/avatar.png"
+              imgSrc="assets/img/portfolio-1.jpg"
               title="Dungeon Together"
               description="Dungeon Together is a real-time multiplayer dungeon-crawling game developed with a modern tech stack, leveraging TypeScript and Vue 3 for a robust and interactive web-based experience. This project showcases advanced web development techniques in game design, including seamless state management, responsive UI components, and multiplayer networking. Still in development."
               externalLink="https://cpuabuse.github.io/dungeon-together/#/"
@@ -28,7 +28,7 @@ export default function Portfolio(): JSX.Element {
           </div>
           <div className="col-md-4 col-xs-6">
             <PortfolioItem
-              imgSrc="assets/img/avatar.png"
+              imgSrc="assets/img/portfolio-2.jpg"
               title="Cross-cat"
               description="A JavaScript package, behaving exactly as Linux cat command, supporting all the options such as line numbering. Written in TypeScript natively."
               externalLink="https://www.npmjs.com/package/cross-cat"
@@ -36,7 +36,7 @@ export default function Portfolio(): JSX.Element {
           </div>
           <div className="col-md-4 col-xs-6">
             <PortfolioItem
-              imgSrc="assets/img/avatar.png"
+              imgSrc="assets/img/portfolio-3.jpg"
               title="Cross-echo"
               description="A JavaScript package, behaving exactly as Linux echo command, supporting all the options such as line numbering. Written in TypeScript natively."
               externalLink="https://github.com/cpuabuse/cross-echo"
