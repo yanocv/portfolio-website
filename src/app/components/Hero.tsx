@@ -22,7 +22,7 @@ const Hero: React.FC = (): JSX.Element => {
 
           <div className="col-md-6 text-right">
             <Image
-              src="assets/img/avatar.png"
+              src="/assets/img/avatar.png"
               alt="my photo"
               width={500}
               height={600}
