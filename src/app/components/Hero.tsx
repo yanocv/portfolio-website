@@ -9,7 +9,7 @@ const Hero: React.FC = (): JSX.Element => {
           <div className="col-md-6">
             <h1>Yano Hayato</h1>
             <div className="page-scroll">
-              <p className="job-title">Frontwsdxwwxend Developer</p>
+              <p className="job-title">Frontend Developer</p>
               <a href="#contact" className="btn btn-fill ">
                 Hire me
               </a>
@@ -22,7 +22,7 @@ const Hero: React.FC = (): JSX.Element => {
 
           <div className="col-md-6 text-right">
             <Image
-              src="/assets/img/avatar.png"
+              src="/portfolio-website/public/assets/img/avatar.png"
               alt="my photo"
               width={500}
               height={600}
