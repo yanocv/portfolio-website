@@ -4,7 +4,7 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es2021: true,
+    es2021: true
   },
 
   extends: [
@@ -13,7 +13,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
+    "plugin:react-hooks/recommended"
   ],
 
   plugins: ["@typescript-eslint", "import", "react", "react-hooks", "prettier"],
@@ -21,34 +21,39 @@ module.exports = {
     sourceType: "module",
     ecmaVersion: 2021,
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   settings: {
     react: {
-      version: "detect",
+      version: "detect"
     },
     "import/resolver": {
       node: {
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
-      },
-    },
+        extensions: [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   },
   rules: {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "prettier/prettier": ["error", { endOfLine: "auto" }],
+
+    "prettier/prettier": [
+      "error",
+      { endOfLine: "auto", trailingComma: "none" }
+    ],
+
     "@typescript-eslint/explicit-module-boundary-types": [
       "error",
       {
-        allowArgumentsExplicitlyTypedAsAny: true,
-      },
+        allowArgumentsExplicitlyTypedAsAny: true
+      }
     ],
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {
-        allowExpressions: true,
-      },
+        allowExpressions: true
+      }
     ],
     "import/extensions": [
       "error",
@@ -58,12 +63,12 @@ module.exports = {
         mjs: "never",
         jsx: "never",
         ts: "never",
-        tsx: "never",
-      },
+        tsx: "never"
+      }
     ],
     "@typescript-eslint/no-explicit-any": "off",
     "class-methods-use-this": "off",
-    "comma-dangle": ["error", "true"],
+    "comma-dangle": ["error", "never"]
   },
-  ignorePatterns: ["**/node_modules/**", "dist"],
+  ignorePatterns: ["**/node_modules/**", "dist"]
 };

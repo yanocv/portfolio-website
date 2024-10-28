@@ -12,28 +12,28 @@ export default function Home(): JSX.Element {
   const sections: SectionProps[] = [
     {
       id: "about",
-      children: <About />,
+      children: <About />
     },
     {
       id: "skills",
-      children: <Skills />,
+      children: <Skills />
     },
     {
       id: "service",
-      children: <Services />,
+      children: <Services />
     },
     {
       id: "portfolio",
-      children: <Portfolio />,
+      children: <Portfolio />
     },
     {
       id: "counter",
-      children: <Counter />,
+      children: <Counter />
     },
     {
       id: "contact",
-      children: <Contact />,
-    },
+      children: <Contact />
+    }
   ];
 
   return (

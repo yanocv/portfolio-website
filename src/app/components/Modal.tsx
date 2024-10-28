@@ -17,7 +17,7 @@ export default function Modal({
   imgSrc,
   title,
   description,
-  externalLink,
+  externalLink
 }: ModalProps): JSX.Element | null {
   // Lock scrolling of the background when modal is open
   useEffect(() => {
@@ -55,7 +55,12 @@ export default function Modal({
             <p>{description}</p>
           </div>
           <div className="modal-footer">
-            <a href={externalLink} target="_blank" className="btn btn-fill">
+            <a
+              href={externalLink}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-fill"
+            >
               Visit Page
             </a>
           </div>

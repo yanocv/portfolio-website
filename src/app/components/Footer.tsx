@@ -3,8 +3,8 @@
 import "../styles/Footer.css";
 import { FaLinkedin, FaGithub, FaAngleUp } from "react-icons/fa";
 
-export default function Footer() {
-  const handleScrollToTop = () => {
+export default function Footer(): JSX.Element {
+  const handleScrollToTop = (): void => {
     const topElement = document.getElementById("hero");
     if (topElement) {
       topElement.scrollIntoView({ behavior: "smooth" });

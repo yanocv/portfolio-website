@@ -9,7 +9,7 @@ export default function FormInput({
   name,
   placeholder,
   type,
-  required,
+  required
 }: FormInputProps): JSX.Element {
   return (
     <input

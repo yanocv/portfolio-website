@@ -7,8 +7,8 @@ interface SkillItemProps {
 
 const SkillItem: React.FC<SkillItemProps> = ({
   name,
-  progress,
-}): JSX.Element => {
+  progress
+}: SkillItemProps): JSX.Element => {
   return (
     <div className="skill">
       <h4 className="text-left">{name}</h4>
