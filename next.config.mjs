@@ -6,7 +6,7 @@ const nextConfig = {
   basePath: isProd ? "/portfolio-website" : "",
   assetPrefix: isProd ? "/portfolio-website" : "",
 
-  reactStrictMode: true,
+  reactStrictMode: true
 };
 
 export default nextConfig;
