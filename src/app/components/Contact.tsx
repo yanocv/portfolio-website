@@ -8,7 +8,7 @@ const Contact: React.FC = (): JSX.Element => {
       <div className="container">
         <h3>Contact</h3>
         <Image
-          src="/assets/img/lines.svg"
+          src="assets/img/lines.svg"
           className="img-lines"
           alt="lines"
           width={60}

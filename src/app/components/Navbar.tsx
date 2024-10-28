@@ -46,7 +46,7 @@ const Navbar: React.FC = (): JSX.Element => {
 
             <Link href="#hero" className="site-logo">
               <Image
-                src="/assets/img/test.svg"
+                src="assets/img/test.svg"
                 alt="logo"
                 width={100}
                 height={50}
