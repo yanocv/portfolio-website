@@ -36,7 +36,7 @@ const About: React.FC = (): JSX.Element => {
           <div className="col-md-6 col-md-offset-3">
             <h2>About</h2>
             <Image
-              src="assets/img/lines.svg"
+              src="/assets/img/lines.svg"
               className="img-lines"
               alt="lines"
               width={60}

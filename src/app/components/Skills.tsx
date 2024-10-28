@@ -8,7 +8,7 @@ const Skills: React.FC = (): JSX.Element => {
       <div className="container text-center">
         <h3>My Skills</h3>
         <Image
-          src="assets/img/lines.svg"
+          src="/assets/img/lines.svg"
           className="img-lines"
           alt="lines"
           width={60}

@@ -9,7 +9,7 @@ export default function Portfolio(): JSX.Element {
         <div className="text-center">
           <h3>My Recent Works</h3>
           <Image
-            src="assets/img/lines.svg"
+            src="/assets/img/lines.svg"
             className="img-lines"
             alt="lines"
             width={60}
@@ -20,7 +20,7 @@ export default function Portfolio(): JSX.Element {
         <div className="row">
           <div className="col-md-4 col-xs-6">
             <PortfolioItem
-              imgSrc="assets/img/portfolio1.png"
+              imgSrc="/assets/img/portfolio1.png"
               title="Dungeon Together"
               description="Dungeon Together is a real-time multiplayer dungeon-crawling game developed with a modern tech stack, leveraging TypeScript and Vue 3 for a robust and interactive web-based experience. This project showcases advanced web development techniques in game design, including seamless state management, responsive UI components, and multiplayer networking. Still in development."
               externalLink="https://cpuabuse.github.io/dungeon-together/#/"
@@ -28,7 +28,7 @@ export default function Portfolio(): JSX.Element {
           </div>
           <div className="col-md-4 col-xs-6">
             <PortfolioItem
-              imgSrc="assets/img/portfolio2.png"
+              imgSrc="/assets/img/portfolio2.png"
               title="Cross-cat"
               description="A JavaScript package, behaving exactly as Linux cat command, supporting all the options such as line numbering. Written in TypeScript natively."
               externalLink="https://www.npmjs.com/package/cross-cat"
@@ -36,7 +36,7 @@ export default function Portfolio(): JSX.Element {
           </div>
           <div className="col-md-4 col-xs-6">
             <PortfolioItem
-              imgSrc="assets/img/portfolio3.png"
+              imgSrc="/assets/img/portfolio3.png"
               title="Cross-echo"
               description="A JavaScript package, behaving exactly as Linux echo command, supporting all the options such as line numbering. Written in TypeScript natively."
               externalLink="https://github.com/cpuabuse/cross-echo"
@@ -44,7 +44,7 @@ export default function Portfolio(): JSX.Element {
           </div>
           <div className="col-md-4 col-xs-6">
             <PortfolioItem
-              imgSrc="assets/img/portfolio4.png"
+              imgSrc="/assets/img/portfolio4.png"
               title="Roger's moving service"
               description="A website for a moving service company.Written in TypeScript natively, using react and nextjs as frameworks."
               externalLink="https://github.com/yanocv/RMSJP"
@@ -52,7 +52,7 @@ export default function Portfolio(): JSX.Element {
           </div>
           <div className="col-md-4 col-xs-6">
             <PortfolioItem
-              imgSrc="assets/img/portfolio5.png"
+              imgSrc="/assets/img/portfolio5.png"
               title="User information management system"
               description="User Information Management System is a comprehensive solution designed to streamline and manage the administrative tasks associated with handling employee profiles, roles, and permissions within a company. Built with modern technologies, this system is tailored to support both small and large enterprises by ensuring data security, user accessibility, and efficient management of user information."
               externalLink="https://github.com/yanocv/user-management-system"
@@ -60,7 +60,7 @@ export default function Portfolio(): JSX.Element {
           </div>
           <div className="col-md-4 col-xs-6">
             <PortfolioItem
-              imgSrc="assets/img/portfolio6.png"
+              imgSrc="/assets/img/portfolio6.png"
               title="Coming Soon"
               description="More projects are coming soon!"
               externalLink="#"

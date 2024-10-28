@@ -1,6 +1,5 @@
 .section-services {
   position: relative;
-  padding-top: 220px;
 }
 
 .section-services:before {
@@ -33,20 +32,12 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .section-services {
-    padding-top: 200px;
-  }
-
   .section-services .container {
     padding: 70px 90px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .section-services {
-    padding-top: 180px;
-  }
-
   .section-services .container {
     width: 90%;
     padding: 40px 20px;
