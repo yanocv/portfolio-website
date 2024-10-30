@@ -16,13 +16,13 @@ export default function PortfolioItem({
   imgSrc,
   title,
   description,
-  externalLink,
+  externalLink
 }: PortfolioItemProps): JSX.Element {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => setIsModalOpen(true);
+  const openModal = (): void => setIsModalOpen(true);
 
-  const closeModal = () => setIsModalOpen(false);
+  const closeModal = (): void => setIsModalOpen(false);
 
   return (
     <div className="portfolio-item">

@@ -1,17 +1,16 @@
-// components/ScrollAnimation.tsx
 import { useEffect, useState } from "react";
 import { useSpring, animated } from "react-spring";
 
-const ScrollAnimation = () => {
+const ScrollAnimation = (): JSX.Element => {
   const [scrollY, setScrollY] = useState(0);
 
   const props = useSpring({
     opacity: scrollY > 200 ? 0 : 1,
-    transform: scrollY > 200 ? "translateY(-50px)" : "translateY(0)",
+    transform: scrollY > 200 ? "translateY(-50px)" : "translateY(0)"
   });
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = (): void => {
       setScrollY(window.scrollY);
     };
 

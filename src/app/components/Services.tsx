@@ -1,8 +1,8 @@
+import Image from "next/image";
 import ServiceItem from "./ServiceItem";
 import "../styles/Services.css";
-import Image from "next/image";
 
-export default function Services() {
+export default function Services(): JSX.Element {
   return (
     <section id="service" className="section-services overlay text-center">
       <div className="container">

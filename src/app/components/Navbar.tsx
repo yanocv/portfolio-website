@@ -10,7 +10,7 @@ const Navbar: React.FC = (): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const handleScroll = (): void => {
-    setIsScrolled(window.scrollY > 50); // Adjust the scroll threshold as needed
+    setIsScrolled(window.scrollY > 50);
   };
 
   const toggleMenu = (): void => {
@@ -46,7 +46,7 @@ const Navbar: React.FC = (): JSX.Element => {
 
             <Link href="#hero" className="site-logo">
               <Image
-                src="/assets/img/test.svg"
+                src="assets/img/logo.svg"
                 alt="logo"
                 width={100}
                 height={50}

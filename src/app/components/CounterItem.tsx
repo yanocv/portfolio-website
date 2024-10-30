@@ -7,7 +7,7 @@ interface CounterItemProps {
 
 export default function CounterItem({
   count,
-  text,
+  text
 }: CounterItemProps): JSX.Element {
   return (
     <>

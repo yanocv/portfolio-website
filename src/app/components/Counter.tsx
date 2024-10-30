@@ -1,10 +1,10 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import CounterItem from "./CounterItem";
 import "../styles/Counter.css";
-import { useEffect, useState } from "react";
 
-export default function Counter() {
+export default function Counter(): JSX.Element {
   const [secondsOnSite, setSecondsOnSite] = useState(0);
   const [displayedCount, setDisplayedCount] = useState(0);
   useEffect(() => {

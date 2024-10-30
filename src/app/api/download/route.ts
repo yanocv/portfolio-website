@@ -8,7 +8,7 @@ export async function GET(): Promise<NextResponse> {
 
   try {
     const response = await axios.get(fileUrl, {
-      responseType: "stream",
+      responseType: "stream"
     });
 
     const headers = new Headers();

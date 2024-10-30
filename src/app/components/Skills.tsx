@@ -1,6 +1,6 @@
 import "../styles/Skills.css";
-import SkillItem from "./SkillItem";
 import Image from "next/image";
+import SkillItem from "./SkillItem";
 
 const Skills: React.FC = (): JSX.Element => {
   return (
