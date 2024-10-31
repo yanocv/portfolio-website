@@ -6,6 +6,7 @@ import Image from "next/image";
 import "../styles/Navbar.css";
 
 const Navbar: React.FC = (): JSX.Element => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
@@ -46,10 +47,10 @@ const Navbar: React.FC = (): JSX.Element => {
 
             <Link href="#hero" className="site-logo">
               <Image
-                src="assets/img/logo.svg"
+                src={`${basePath}/assets/img/logo.svg`}
                 alt="logo"
                 width={100}
-                height={50}
+                height={40}
               />
             </Link>
           </div>

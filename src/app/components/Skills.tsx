@@ -1,14 +1,18 @@
+"use client";
+
 import "../styles/Skills.css";
 import Image from "next/image";
 import SkillItem from "./SkillItem";
 
 const Skills: React.FC = (): JSX.Element => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   return (
     <section className="section-skills">
       <div className="container text-center">
         <h3>My Skills</h3>
         <Image
-          src="assets/img/lines.svg"
+          src={`${basePath}/assets/img/lines.svg`}
           className="img-lines"
           alt="lines"
           width={60}

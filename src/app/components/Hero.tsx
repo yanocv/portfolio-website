@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import "../styles/Hero.css";
 
 const Hero: React.FC = (): JSX.Element => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <div id="hero" className="hero bg-gray-200 ">
       <div className="container">
@@ -22,7 +25,7 @@ const Hero: React.FC = (): JSX.Element => {
 
           <div className="col-md-6 text-right">
             <Image
-              src="assets/img/avatar.png"
+              src={`${basePath}/assets/img/avatar.png`}
               alt="my photo"
               width={500}
               height={600}
