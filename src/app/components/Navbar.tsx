@@ -50,7 +50,7 @@ const Navbar: React.FC = (): JSX.Element => {
                 src={`${basePath}/assets/img/logo.svg`}
                 alt="logo"
                 width={100}
-                height={40}
+                height={32}
               />
             </Link>
           </div>
