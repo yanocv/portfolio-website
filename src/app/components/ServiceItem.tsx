@@ -14,7 +14,7 @@ export default function ServiceItem({
 }: ServiceItemProps): JSX.Element {
   return (
     <div className="service">
-      <Image src={imgSrc} alt={title} />
+      <Image src={imgSrc} alt={title} width={50} height={50} />
       <h4>{title}</h4>
       <p>{description}</p>
     </div>

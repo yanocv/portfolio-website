@@ -4,6 +4,8 @@ import Image from "next/image";
 import "../styles/About.css";
 
 const About: React.FC = (): JSX.Element => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   const handleDownload = async (
     e: React.MouseEvent<HTMLButtonElement>
   ): Promise<void> => {
@@ -36,7 +38,7 @@ const About: React.FC = (): JSX.Element => {
           <div className="col-md-6 col-md-offset-3">
             <h2>About</h2>
             <Image
-              src="assets/img/lines.svg"
+              src={`${basePath}/assets/img/lines.svg`}
               className="img-lines"
               alt="lines"
               width={60}
