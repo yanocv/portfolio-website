@@ -12,7 +12,7 @@ const About: React.FC = (): JSX.Element => {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/download");
+      const response = await fetch(`${basePath}/api/download`);
 
       if (!response.ok) {
         throw new Error("Failed to download file");
