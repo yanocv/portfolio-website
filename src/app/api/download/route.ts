@@ -1,6 +1,8 @@
-/* eslint-disable import/prefer-default-export */
 import { NextResponse } from "next/server";
 import axios from "axios";
+
+export const dynamic = "force-static";
+export const revalidate = 60;
 
 export async function GET(): Promise<NextResponse> {
   const fileUrl =

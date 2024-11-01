@@ -6,8 +6,8 @@
   z-index: 5;
 }
 
-/* Navigation */
 .navbar-nav > li > a {
+  font-size: 14px;
   padding: 5px 0 !important;
   font-weight: 600;
   color: #212121;
