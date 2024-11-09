@@ -1,5 +1,5 @@
 import About from "./components/About";
-import Contact from "./components/Contact";
+import Contact from "./components/contact-form/Contact";
 import Counter from "./components/Counter";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
