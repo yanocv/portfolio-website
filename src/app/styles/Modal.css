@@ -83,21 +83,3 @@ body.modal-open {
   height: auto;
   border-radius: 5px;
 }
-
-@media only screen and (max-width: 1199px) {
-  .modal-header {
-    height: 400px;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .modal-header {
-    height: 350px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .modal-header {
-    height: 250px;
-  }
-}
