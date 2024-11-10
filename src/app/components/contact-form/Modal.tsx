@@ -1,25 +1,25 @@
 import { useEffect } from "react";
 import "../../styles/Modal.css";
 
-interface SuccessModalProps {
+interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   message: string;
+  type: "success" | "error";
 }
 
-export default function SuccessModal({
+export default function Modal({
   isOpen,
   onClose,
-  message
-}: SuccessModalProps): JSX.Element | null {
-  // Lock scrolling of the background when modal is open
+  message,
+  type
+}: ModalProps): JSX.Element | null {
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("modal-open");
     } else {
       document.body.classList.remove("modal-open");
     }
-    // Cleanup to remove the class when modal is closed
     return () => {
       document.body.classList.remove("modal-open");
     };
@@ -27,9 +27,15 @@ export default function SuccessModal({
 
   if (!isOpen) return null;
 
+  const modalTitle = type === "success" ? "Success" : "Error";
+  const modalClass = type === "success" ? "modal-success" : "modal-error";
+
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-dialog" onClick={(e) => e.stopPropagation()}>
+      <div
+        className={`modal-dialog ${modalClass}`}
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="modal-content">
           <div className="modal-header">
             <button className="close" onClick={onClose}>
@@ -37,7 +43,7 @@ export default function SuccessModal({
             </button>
           </div>
           <div className="modal-body">
-            <h4 className="modal-title">Success</h4>
+            <h4 className="modal-title">{modalTitle}</h4>
             <p>{message}</p>
           </div>
           <div className="modal-footer">

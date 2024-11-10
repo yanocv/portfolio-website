@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import FormInput from "./FormInput";
 import FormTextArea from "./FormTextArea";
-import SuccessModal from "./SuccessModal";
+import Modal from "./Modal";
 import {
   validateName,
   validateEmail,
@@ -18,6 +18,17 @@ const ContactForm: React.FC = (): JSX.Element => {
   });
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false);
+  const [modalType, setModalType] = useState<"success" | "error">("success");
+
+  useEffect(() => {
+    const nameError = validateName(formData.name);
+    const emailError = validateEmail(formData.email);
+    const messageError = validateMessage(formData.message);
+
+    // Set form validity based on validation
+    setIsFormValid(!nameError && !emailError && !messageError);
+  }, [formData]);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -39,10 +50,12 @@ const ContactForm: React.FC = (): JSX.Element => {
         }
       );
 
+      setModalType("success");
       setIsModalOpen(true);
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error("Error sending form data:", error);
+      setModalType("error");
+      setIsModalOpen(true);
     }
   };
 
@@ -105,14 +118,19 @@ const ContactForm: React.FC = (): JSX.Element => {
           />
         </div>
       </div>
-      <button className="btn btn-border" type="submit">
+      <button className="btn btn-border" type="submit" disabled={!isFormValid}>
         Hire Me <span className="glyphicon glyphicon-send"></span>
       </button>
 
-      <SuccessModal
+      <Modal
         isOpen={isModalOpen}
         onClose={handleModalClose}
-        message="Your form has been submitted successfully!"
+        message={
+          modalType === "success"
+            ? "Your form has been submitted successfully!"
+            : "We encountered an issue while sending your form. Please try again later. If the problem persists, feel free to contact us directly or reach out via LinkedIn. Thank you for your patience!"
+        }
+        type={modalType}
       />
     </form>
   );

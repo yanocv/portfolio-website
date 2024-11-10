@@ -83,3 +83,13 @@ body.modal-open {
   height: auto;
   border-radius: 5px;
 }
+
+.modal-success .modal-content {
+  border: 2px solid green;
+  background-color: #e6ffed;
+}
+
+.modal-error .modal-content {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
