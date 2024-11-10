@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import ContactForm from "./ContactForm";
-import "../styles/Contact.css";
+import "../../styles/Contact.css";
 
 const Contact: React.FC = (): JSX.Element => {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";

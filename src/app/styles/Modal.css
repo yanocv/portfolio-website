@@ -84,20 +84,12 @@ body.modal-open {
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 1199px) {
-  .modal-header {
-    height: 400px;
-  }
+.modal-success .modal-content {
+  border: 2px solid green;
+  background-color: #e6ffed;
 }
 
-@media only screen and (max-width: 991px) {
-  .modal-header {
-    height: 350px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .modal-header {
-    height: 250px;
-  }
+.modal-error .modal-content {
+  border: 2px solid red;
+  background-color: #ffe6e6;
 }
