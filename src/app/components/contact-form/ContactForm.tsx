@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import FormInput from "./FormInput";
 import FormTextArea from "./FormTextArea";
 import SuccessModal from "./SuccessModal";
@@ -25,6 +26,26 @@ const ContactForm: React.FC = (): JSX.Element => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
+  const sendFormData = async (data: object): Promise<void> => {
+    try {
+      await axios.post(
+        "https://ob23kgaqrj.execute-api.ap-northeast-1.amazonaws.com/prod/send-to-gmail-portfolio",
+        JSON.stringify(data),
+        {
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json"
+          }
+        }
+      );
+
+      setIsModalOpen(true);
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error sending form data:", error);
+    }
+  };
+
   const handleSubmit = (e: React.FormEvent): void => {
     e.preventDefault();
 
@@ -43,9 +64,7 @@ const ContactForm: React.FC = (): JSX.Element => {
       return; // Prevent form submission
     }
 
-    setIsModalOpen(true);
-    // If no errors, proceed with form submission
-    console.log("Form submitted successfully", formData);
+    sendFormData(formData);
   };
 
   const handleModalClose = (): void => {
