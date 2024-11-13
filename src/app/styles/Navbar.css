@@ -77,6 +77,10 @@
     padding-left: 15px;
   }
 
+  .site-logo-img {
+    margin-top: 10px;
+  }
+
   /* Navigation */
   .navbar-toggle {
     margin: 0 15px 0 0;
