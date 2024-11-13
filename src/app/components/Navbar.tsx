@@ -51,6 +51,7 @@ const Navbar: React.FC = (): JSX.Element => {
                 alt="logo"
                 width={100}
                 height={32}
+                className="site-logo-img"
               />
             </Link>
           </div>
