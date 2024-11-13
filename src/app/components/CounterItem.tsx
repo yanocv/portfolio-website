@@ -1,5 +1,3 @@
-"use client";
-
 interface CounterItemProps {
   count: number;
   text: string | JSX.Element;
