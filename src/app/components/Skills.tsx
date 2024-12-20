@@ -1,5 +1,3 @@
-"use client";
-
 import "../styles/Skills.css";
 import Image from "next/image";
 import SkillItem from "./SkillItem";

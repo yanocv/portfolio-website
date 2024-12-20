@@ -1,34 +1,15 @@
 "use client";
 
 import Image from "next/image";
+
 import "../styles/About.css";
+import downloadFile from "../utils/download";
 
 const About: React.FC = (): JSX.Element => {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
-  const handleDownload = async (
-    e: React.MouseEvent<HTMLButtonElement>
-  ): Promise<void> => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch(`${basePath}/api/download`);
-
-      if (!response.ok) {
-        throw new Error("Failed to download file");
-      }
-
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
-      link.setAttribute("download", "Resume_Hayato_Yano.pdf");
-      document.body.appendChild(link);
-      link.click();
-      link.parentNode?.removeChild(link);
-    } catch (error) {
-      console.error("Error downloading file:", error);
-    }
+  const handleDownload = (): void => {
+    downloadFile(`${basePath}/api/download`, "Resume_Hayato_Yano.pdf");
   };
 
   return (
