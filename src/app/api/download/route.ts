@@ -6,7 +6,7 @@ export const revalidate = 60;
 
 export async function GET(): Promise<NextResponse> {
   const fileUrl =
-    "https://my-english-cv-bucket.s3.ap-northeast-1.amazonaws.com/Resume+-+Hayato+Yano+(1).pdf";
+    "https://my-english-cv-bucket.s3.ap-northeast-1.amazonaws.com/Resume+-+Hayato+Yano.pdf";
 
   try {
     const response = await axios.get(fileUrl, {
